@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+    <script src="jquery-1.9.1.min.js"></script>
+    <script src="jquery.jsonp-2.4.0.min.js"></script>
+    <script src="iscroll.js"></script>
+    <style>
+        #sc {
+            background: #f0f0f0;
+            width: 200px;
+            height: 200px;
+            overflow: hidden;
+        }
+
+        .x {
+            box-shadow: 0px 0px 5px 5px black inset;
+            width: 300px;
+            height: 300px;
+        }
+    </style>
+</head>
+<body>
+<div id="sc">
+    <div>
+    <div class="x"></div><div class="x"></div>
+    </div>
+</div>
+</body>
+
+<script>
+    setTimeout(function(){
+        var k = new IScroll("#sc", {
+            scrollY: true,
+            bounce: true
+        })
+    },100);
+
+</script>
+</html>
